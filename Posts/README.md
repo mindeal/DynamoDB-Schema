@@ -5,19 +5,19 @@ All kinds of posts(Deals and Articles) are abstracted to posts and stored in one
 
 ```json
 {
-    "id" String: "335a76b9-9932-44c2-9d92-ae34aee1a17c",
-    "title" String: "Burberry香水线上3折起",
-    "subtitle" String: "低至三折+买一送一",
-    "price" String: "30",
-    "currency" String: "",
-    "banner_images" String Set: ["https://mindeal-cms-test.s3.amazonaws.com/favicon.ico", "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico", "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"],
-    "payment_method" String Set: ["wechatpay", "alipay"],
-    "is_china_delivery" Boolran: true,
-    "coupons" String Set: ["DEALMOON4JULY", "DEALMOON4JULY"],
-    "content" String: "<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <title>Document</title></head><body> </body></html>",
-    "showed_favorites" Number: 12,
-    "actual_favorites" Number: 0,
-    "comments" List: [
+    "id (String)": "335a76b9-9932-44c2-9d92-ae34aee1a17c",
+    "title (String)" : "Burberry香水线上3折起",
+    "subtitle (String)": "低至三折+买一送一",
+    "price (String)": "30",
+    "currency (String)": "",
+    "banner_images (String Set)": ["https://mindeal-cms-test.s3.amazonaws.com/favicon.ico", "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico", "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"],
+    "payment_method (String Set)": ["wechatpay", "alipay"],
+    "is_china_delivery (Boolean)": true,
+    "coupons (String Set)": ["DEALMOON4JULY", "DEALMOON4JULY"],
+    "content (String Set)": "<!DOCTYPE html><html lang=\"en\"><head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"> <title>Document</title></head><body> </body></html>",
+    "showed_favorites (Number)": 12,
+    "actual_favorites (Number)": 0,
+    "comments (List)": [
         {
             "id": "7db3326e-3860-43be-b647-0109c48b19a6",
             "author": {
@@ -30,7 +30,7 @@ All kinds of posts(Deals and Articles) are abstracted to posts and stored in one
             "posted_at": 1562383349
         }
     ],
-    "purchase_url" String: "https://goo.gl"
+    "purchase_url (String)": "https://goo.gl"
 }
 ```
 
