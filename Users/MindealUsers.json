@@ -1,0 +1,18 @@
+{
+    "id (String)": "335a76b9-9932-44c2-9d92-ae34aee1a17c",
+    "email (String)": "dolem.hao@gmail.com",
+    "phone (String)": "+15153030209",
+    "gender (Number)": 0,
+    "birthday (String)": "YYYYMMDD",
+    "location": "London",
+    "avatar": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+    "registered_at": 1562397913,
+    "last_signin": 1562397928,
+    "signin_history": [
+        {
+            "timestamp": 1562397928,
+            "ip (String)": "127.0.0.1",
+            "geo (Number Set)": [35.6761919, 139.6503106] 
+        }
+    ]
+}

@@ -13,7 +13,16 @@ All kinds of posts(Deals and Articles) are abstracted to posts and stored in one
     "banner_images (String Set)": ["https://mindeal-cms-test.s3.amazonaws.com/favicon.ico", "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico", "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"],
     "payment_method (String Set)": ["wechatpay", "alipay"],
     "is_china_delivery (Boolean)": true,
-    "coupons (String Set)": ["DEALMOON4JULY", "DEALMOON4JULY"],
+    "coupons (List)": [
+        {
+            "code": "AIR5",
+            "description": "全场满$55减$5"
+        },
+        {
+            "code": "AIR10",
+            "description": "全场满$100减$10"
+        }
+    ],
     "content (String Set)": "<!DOCTYPE html><html lang=\"en\"><head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"> <title>Document</title></head><body> </body></html>",
     "showed_favorites (Number)": 12,
     "actual_favorites (Number)": 0,
@@ -30,13 +39,31 @@ All kinds of posts(Deals and Articles) are abstracted to posts and stored in one
             "posted_at": 1562383349
         }
     ],
-    "purchase_url (String)": "https://goo.gl"
+    "purchase_url (String)": "https://goo.gl",
+    "popular_items (List)": [
+        {
+            "title": "小棕瓶",
+            "image": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "price": 232.5,
+            "list_price": 310
+        },
+        {
+            "title": "神仙水",
+            "image": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "price": 232.5,
+            "list_price": 310
+        }
+    ]
 }
 ```
 
 ## Attributes list
 
+### Required
 - [`id`](#id)
+
+### Optional
+
 - [`title`](#title)
 - [`subtitle`](#subtitle)
 - [`price`](#price)
@@ -113,9 +140,11 @@ Indicates if it's China shipping.
 ### `coupons`
 ---
 #### Type
-`String Set`
+`List`
 #### Description
-The array of coupons
+The List of couples
+- `code`: String, the coupon code
+- `description`: String, coupon description
 
 ---
 ### `content`
