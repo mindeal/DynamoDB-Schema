@@ -193,3 +193,15 @@ The comments is a `List` of `Map`s containing the following attributes snapshote
 `String`
 #### Description
 Where to buy(We will make money here!)
+
+---
+### `popular_items`
+---
+#### Type
+`List`
+#### Description
+List of popular items relating to the post.
+- `title`: String, short item description
+- `image`: s3 image link
+- `price`: current price, after discount price
+- `list_price`: original price, before discount price
