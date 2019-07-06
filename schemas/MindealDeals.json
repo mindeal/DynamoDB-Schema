@@ -1,0 +1,28 @@
+{
+    "id": "String",
+    "title": "String",
+    "subtitle": "String",
+    "price": "String",
+    "banner_images": "String Set",
+    "payment_method": "String Set",
+    "shipping_method": null,
+    "china_delivery": "Boolean",
+    "coupons": "String Set",
+    "content": null,
+    "showed_favorites": null,
+    "actual_favorites": null,
+    "comments": [
+        {
+            "id": "String",
+            "author": {
+                "id": "String",
+                "name": "String",
+                "avatar": "String"
+            },
+            "content": "String",
+            "parent_id": "String",
+            "posted_at": "String(ISO 8601) or Number(epoch)"
+        }
+    ],
+    "purchase_url": "String"
+}

@@ -1,0 +1,13 @@
+{
+    "id": "String",
+    "author": {
+        "id": "String",
+        "name": "String",
+        "avatar": "String"
+    },
+    "content": "String",
+    "discussion_id": "String",
+    "parent_id": "String",
+    "posted_at": "String(ISO 8601) or Number(epoch)",
+    "is_showed": "Boolean"
+}
