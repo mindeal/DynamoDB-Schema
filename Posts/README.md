@@ -8,7 +8,8 @@ All kinds of posts(Deals and Articles) are abstracted to posts and stored in one
     "id (String)": "335a76b9-9932-44c2-9d92-ae34aee1a17c",
     "title (String)" : "Burberry香水线上3折起",
     "subtitle (String)": "低至三折+买一送一",
-    "price (String)": "30",
+    "price (Number)": 30,
+    "list_price (Number)": 50,
     "currency (String)": "",
     "banner_images (String Set)": ["https://mindeal-cms-test.s3.amazonaws.com/favicon.ico", "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico", "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"],
     "payment_method (String Set)": ["wechatpay", "alipay"],
@@ -106,9 +107,17 @@ The subtitle of a post.
 ### `price`
 ---
 #### Type
-`String`
+`Number`
 #### Description
-The price of a post.
+The current price, after discount of a post.
+
+---
+### `List_price`
+---
+#### Type
+`Number`
+#### Description
+The original price, before discount of a post.
 
 ---
 ### `banner_images`
