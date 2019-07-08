@@ -2,8 +2,6 @@
     "id (String)": "335a76b9-9932-44c2-9d92-ae34aee1a17c",
     "title (String)" : "Burberry香水线上3折起",
     "subtitle (String)": "低至三折+买一送一",
-    "price (Number)": 30,
-    "list_price (Number)": 50,
     "currency (String)": "",
     "banner_images (String Set)": ["https://mindeal-cms-test.s3.amazonaws.com/favicon.ico", "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico", "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"],
     "payment_method (String Set)": ["wechatpay", "alipay"],
@@ -29,7 +27,7 @@
                 "name": "AssWeCan",
                 "avatar": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
             },
-            "content": "卧槽你说很有道理！",
+            "content": "你说很有道理！",
             "parent_id": "00a71a22-ca20-4b6d-abb7-ada2f56c50f2",
             "posted_at": 1562383349
         }
@@ -38,15 +36,16 @@
     "popular_items (List)": [
         {
             "title": "小棕瓶",
-            "image": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
-            "price": 232.5,
-            "list_price": 310
+            "image": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
         },
         {
             "title": "神仙水",
-            "image": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
-            "price": 232.5,
-            "list_price": 310
+            "image": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        }
+    ],
+    "brands": [
+        {
+            
         }
     ]
 }

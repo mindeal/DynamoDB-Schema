@@ -7,10 +7,13 @@
 6. Max length of title/subtitle?
 7. Do we need price and how do we store price?
 8. Should comment store the lastest or oldest and in order issue.
-9. How do we save draft for CMS using
+9. How do we save draft in CMS
 10. Is price a number or string
 11. how do we get similar posts.
 12. Shall we separate Brands and Deals/Articles
+
+# Brand
+1. Figure out what the brand is, does it include retailers?
 
 # Comments
 1. ~~One big table or separated table for different types of post?~~ YES

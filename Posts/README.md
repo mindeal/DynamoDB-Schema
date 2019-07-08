@@ -2,62 +2,6 @@
 
 All kinds of posts(Deals and Articles) are abstracted to posts and stored in one `MindealPosts` table.
 
-
-```json
-{
-    "id (String)": "335a76b9-9932-44c2-9d92-ae34aee1a17c",
-    "title (String)" : "Burberry香水线上3折起",
-    "subtitle (String)": "低至三折+买一送一",
-    "price (Number)": 30,
-    "list_price (Number)": 50,
-    "currency (String)": "",
-    "banner_images (String Set)": ["https://mindeal-cms-test.s3.amazonaws.com/favicon.ico", "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico", "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"],
-    "payment_method (String Set)": ["wechatpay", "alipay"],
-    "is_china_delivery (Boolean)": true,
-    "coupons (List)": [
-        {
-            "code": "AIR5",
-            "description": "全场满$55减$5"
-        },
-        {
-            "code": "AIR10",
-            "description": "全场满$100减$10"
-        }
-    ],
-    "content (String Set)": "<!DOCTYPE html><html lang=\"en\"><head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"> <title>Document</title></head><body> </body></html>",
-    "showed_favorites (Number)": 12,
-    "actual_favorites (Number)": 0,
-    "comments (List)": [
-        {
-            "id": "7db3326e-3860-43be-b647-0109c48b19a6",
-            "author": {
-                "id": "2d456a54-672f-4bb2-bbe4-838605b1bb8b",
-                "name": "AssWeCan",
-                "avatar": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
-            },
-            "content": "卧槽你说很有道理！",
-            "parent_id": "00a71a22-ca20-4b6d-abb7-ada2f56c50f2",
-            "posted_at": 1562383349
-        }
-    ],
-    "purchase_url (String)": "https://goo.gl",
-    "popular_items (List)": [
-        {
-            "title": "小棕瓶",
-            "image": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
-            "price": 232.5,
-            "list_price": 310
-        },
-        {
-            "title": "神仙水",
-            "image": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
-            "price": 232.5,
-            "list_price": 310
-        }
-    ]
-}
-```
-
 ## Attributes list
 
 ### Required
