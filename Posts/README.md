@@ -9,9 +9,18 @@ All kinds of posts(Deals and Articles) are abstracted to posts and stored in one
 
 ### Optional
 
+#### Deals
+- [`title`](#title)
+- [`banner_images`](#banner_images)
+- [`content`](#content)
+- [`showed_favorites`](#showed_favorites)
+- [`comments`](#comments)
+
+
+#### Articles
+
 - [`title`](#title)
 - [`subtitle`](#subtitle)
-- [`price`](#price)
 - [`banner_images`](#banner_images)
 - [`payment_method`](#payment_method)
 - [`is_china_delivery`](#is_china_delivery)
@@ -122,6 +131,14 @@ Number of favorites to be showed
 `Number`
 #### Description
 Real number of favorites.
+
+---
+### `total_comments`
+---
+#### Type
+`Number`
+#### Description
+Number of total comments.
 
 ---
 ### `comments`

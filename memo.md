@@ -3,13 +3,13 @@
 2. ~~Shall we store content HTML to S3~~
 3. ~~Favorites should be a number or string~~
 4. ~~For performance's sake, `content` should store the latest snapshot of comments(lambda's job to update)~~
-5. Mechanism of showing favorites number
-6. Max length of title/subtitle?
-7. Do we need price and how do we store price?
-8. Should comment store the lastest or oldest and in order issue.
+5. ~~Mechanism of showing favorites number~~ Add them all!
+6. **Max length of title/subtitle?**
+7. ~~Do we need price and how do we store price?~~
+8. ~~Should comment store the lastest or oldest and in order issue.~~ parent-child mode / lastest to oldest
 9. How do we save draft in CMS
-10. Is price a number or string
-11. how do we get similar posts.
+10. ~~Is price a number or string~~
+11. ~~how do we get similar posts.~~
 12. Shall we separate Brands and Deals/Articles
 
 # Brand
@@ -30,6 +30,7 @@
     - Partition & Sort key issue
 - ~~Do we need category table?~~ YES
 - ~~Figuring out the pricing~~
+- Arrange files in S3
 
 # Categories
 1. Category of the deal and brands
