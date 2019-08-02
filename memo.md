@@ -33,3 +33,5 @@
 - Arrange files in S3
 - We need to use AWS/X-Ray
 - `deal#2019#08#01#16#24#03` vs `deal#1564697095`
+- naming convention
+- need sharding design
