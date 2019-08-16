@@ -2,35 +2,68 @@
 
 ## Deal
 
-1. [Get a deal with details](#Get-a-deal-with-details)
-1. [Get n latest deals from overall](#Get-n-latest-deals-from-overall)
+1. [Get a single deal with details](#Get-a-deal-with-details)
+1. [Get n latest deals overall](#Get-n-latest-deals-overall)
 1. [Get n latest deals belonging to a category](#Get-n-latest-deals-belonging-to-a-category)
 1. [Get n latest deals belonging to a brand](#Get-n-latest-deals-belonging-to-a-brand)
 1. [Get hottest deals](#get-hottest-deals)
 
 ### Get a deal with details
+点击deal进入单个deal的详情页
 ```
-get: table: pk: table-pk = id, sk = "deal"
+Method: Get
+Table: Main table
+pk: deal-9edbc112-c07f-4800-98dd-040f394379c7
+sk: deal.rand(0, 34)
+```
+We calculate "`rand(0, 34)`" by using the `time_low` part of deal uuid.
+
+Sample Code:
+```javascript
+function getShardingNumberFromUUID(uuid) {
+  const timeLow = uuid.split('-')[0];
+  const timeLowNumber = parseInt(timeLow, 16);
+  const shardingNumber = timeLowNumber % 35;
+  return shardingNumber;
+}
+getShardingNumberFromUUID('281d5b08-248c-4bdf-a790-10de2da4a2fb');
 ```
 
-### Get n latest deals from overall
+### Get n latest deals overall
 ```
-query: gsi2: pk: table-sk = "deal", sk: published_at < now, ScanIndexForward = true, Limit = n
+Method: Query
+Table: GSI2
+pk: deal.0 to deal.34
+sk: published_at(staring with deal#) < current_time
+ScanIndexForward: true
+Limit: n
 ```
+We need to use parallel query `n` deals on every `deal.rand(0, 34)` partition and use lambda to sort and select top `n` from result
 
 ### Get n latest deals belonging to a category
 ```
-query: gsi2: pk: table-sk = "category-id", sk: published_at < deal#now, ScanIndexForward = true, Limit = n
+Method: Query
+Table: GSI2
+pk: category-b5e4bf4d-3b5c-4469-a52f-ab8d8c753a0d
+sk: published_at(staring with deal#) < current_time
+ScanIndexForward: true
+Limit: n
 ```
 
 ### Get n latest deals belonging to a brand
 ```
-query: gsi2: pk: table-sk = "brand-id", sk: published_at < deal#now, ScanIndexForward = true, Limit = n
+Method: Query
+Table: GSI2
+pk: brand-a0ae753f-9927-4625-a50c-ed767a9ae3a9
+sk: published_at(staring with deal#) < current_time
+ScanIndexForward: true
+Limit: n
 ```
 
 ### Get hottest deals
 ```
-query: gsi3: pk: table-sk = "deal", sk: is_popular = true (Sparse Index)
+
+query: gsi3: pk: table-sk = "deal", sk: is_popular = true (Sparse Index: checking existence)
 ```
 
 
@@ -95,7 +128,7 @@ query: gsi2: pk: table-sk = "brand", sk: is_hot = true`(Sparse Index)
 
 ## Deal
 
-1. Get a single deal with details
+1. [Save to draft](#Save-to-draft)
 1. Get list of all categories
 1. Get list of all brands
 1. Get hottest deals
@@ -109,3 +142,5 @@ query: gsi2: pk: table-sk = "brand", sk: is_hot = true`(Sparse Index)
 1. User favorited
 1. Notifications by user
 1. Official notification
+
+### Save to draft

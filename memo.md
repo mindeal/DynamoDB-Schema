@@ -35,3 +35,7 @@
 - `deal#2019#08#01#16#24#03` vs `deal#1564697095`
 - naming convention
 - need sharding design
+- 大多数人大多数时间是在刷而不是在看某一条post(table的设计)
+- epoch time能不能做id 会不会重复时间（应该有可能）
+- We need VPC for lambda functions and an endpoint for DynamoDB
+- Need to determine Fine-Grained IAM Policies.
