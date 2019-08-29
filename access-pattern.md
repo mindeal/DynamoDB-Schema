@@ -13,17 +13,22 @@
 ```
 Method: Get
 Table: Main table
-pk: deal-9edbc112-c07f-4800-98dd-040f394379c7
-sk: deal.rand(0, 34)
+pk: 9edbc112-c07f-4800-98dd-040f394379c7
+sk: deal.rand(0, 14)
 ```
-We calculate "`rand(0, 34)`" by using the `time_low` part of deal uuid.
+We calculate "`rand(0, 14)`" by using the `time_low` part of deal uuid.
+```
+ItemsPerRCU = 8KB / 500B = 16
+PartitionMaxReadRate = 3K * ItemsPerRCU = 48K
+N = (10 * 24 * 365 * 5) / 48K = 9 -> 15
+```
 
 Sample Code:
 ```javascript
 function getShardingNumberFromUUID(uuid) {
   const timeLow = uuid.split('-')[0];
   const timeLowNumber = parseInt(timeLow, 16);
-  const shardingNumber = timeLowNumber % 35;
+  const shardingNumber = timeLowNumber % 15;
   return shardingNumber;
 }
 getShardingNumberFromUUID('281d5b08-248c-4bdf-a790-10de2da4a2fb');
@@ -34,7 +39,7 @@ getShardingNumberFromUUID('281d5b08-248c-4bdf-a790-10de2da4a2fb');
 Method: Query
 Table: GSI2
 pk: deal.0 to deal.34
-sk: published_at(staring with deal#) < current_time
+sk: publishedAt(staring with deal-) < current_time
 ScanIndexForward: true
 Limit: n
 ```
@@ -44,8 +49,8 @@ We need to use parallel query `n` deals on every `deal.rand(0, 34)` partition an
 ```
 Method: Query
 Table: GSI2
-pk: category-b5e4bf4d-3b5c-4469-a52f-ab8d8c753a0d
-sk: published_at(staring with deal#) < current_time
+pk: b5e4bf4d-3b5c-4469-a52f-ab8d8c753a0d
+sk: publishedAt(staring with deal-) < current_time
 ScanIndexForward: true
 Limit: n
 ```
@@ -54,8 +59,8 @@ Limit: n
 ```
 Method: Query
 Table: GSI2
-pk: brand-a0ae753f-9927-4625-a50c-ed767a9ae3a9
-sk: published_at(staring with deal#) < current_time
+pk: a0ae753f-9927-4625-a50c-ed767a9ae3a9
+sk: publishedAt(staring with deal-) < current_time
 ScanIndexForward: true
 Limit: n
 ```
@@ -63,7 +68,7 @@ Limit: n
 ### Get hottest deals
 ```
 
-query: gsi3: pk: table-sk = "deal", sk: is_popular = true (Sparse Index: checking existence)
+query: gsi3: pk: table-sk = "deal", sk: isPopular = true (Sparse Index: checking existence)
 ```
 
 

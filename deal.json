@@ -1,0 +1,57 @@
+{
+    "pk (String)": "deal-5792519f-1cf9-45d0-ba0a-eaeb3533dd8d",
+    "sk (String)": "deal-8",
+    "title (String)": "Burberry香水线上3折起",
+    "subtitle (String)": "低至三折+买一送一",
+    "bannerImages (String Set)": [
+        "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+        "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+        "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+    ],
+    "paymentMethod (String Set)": [
+        "wechatpay",
+        "alipay"
+    ],
+    "label (String)": "独家",
+    "isDeliverToChina (Boolean)": true,
+    "coupons (List)": [
+        {
+            "code": "AIR5",
+            "description": "全场满$55减$5"
+        },
+        {
+            "code": "AIR10",
+            "description": "全场满$100减$10"
+        }
+    ],
+    "totalLike (Number)": 10,
+    "totalFavorite (Number)": 10,
+    "totalComment (Number)": 10,
+    "purchaseUrl (String)": "https://goo.gl",
+    "publishedAt (String)": "deal-1567121541828",
+    "popularItems (List)": [
+        {
+            "title": "小棕瓶",
+            "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "purchaseUrl": "https://goo.gl"
+        },
+        {
+            "title": "神仙水",
+            "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "purchaseUrl": "https://goo.gl"
+        }
+    ],
+    "brands (List)": [
+        {
+            "id": "brand-2d456a54-672f-4bb2-bbe4-838605b1bb8b",
+            "brand": "Jo Malone",
+            "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        },
+        {
+            "id": "brand-2d456a54-672f-4bb2-bbe4-838605b1bb8b",
+            "brand": "Jo Malone",
+            "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        }
+    ],
+    "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+}
