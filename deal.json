@@ -1,7 +1,7 @@
 {
-    "pk (String)": "deal-5792519f-1cf9-45d0-ba0a-eaeb3533dd8d",
-    "sk (String)": "deal-8",
-    "title (String)": "Burberry香水线上3折起",
+    "pk (String) (required)": "deal-5792519f-1cf9-45d0-ba0a-eaeb3533dd8d",
+    "sk (String) (required)": "deal-8",
+    "title (String) (required)": "Burberry香水线上3折起",
     "subtitle (String)": "低至三折+买一送一",
     "bannerImages (String Set)": [
         "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
@@ -24,11 +24,11 @@
             "description": "全场满$100减$10"
         }
     ],
-    "totalLike (Number)": 10,
-    "totalFavorite (Number)": 10,
-    "totalComment (Number)": 10,
+    "totalLike (Number) (required)": 10,
+    "totalFavorite (Number) (required)": 10,
+    "totalComment (Number) (required)": 10,
     "purchaseUrl (String)": "https://goo.gl",
-    "publishedAt (String)": "deal-1567121541828",
+    "publishedAt (String) (required)": "deal-1567121541828",
     "popularItems (List)": [
         {
             "title": "小棕瓶",
@@ -53,5 +53,5 @@
             "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
         }
     ],
-    "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    "body (String) (required)": "https://s3.amazonaws.com/www.mindeal.com/index.html"
 }

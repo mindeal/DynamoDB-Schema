@@ -43,7 +43,7 @@ sk: publishedAt(staring with deal-) < current_time
 ScanIndexForward: true
 Limit: n
 ```
-We need to use parallel query `n` deals on every `deal.rand(0, 34)` partition and use lambda to sort and select top `n` from result
+We need to use parallel query `n` deals on every `deal.rand(0, 14)` partition and use lambda to sort and select top `n` from result
 
 ### Get n latest deals belonging to a category
 ```
@@ -67,8 +67,12 @@ Limit: n
 
 ### Get hottest deals
 ```
-
-query: gsi3: pk: table-sk = "deal", sk: isPopular = true (Sparse Index: checking existence)
+Method: Query
+Table: GSI2
+pk: a0ae753f-9927-4625-a50c-ed767a9ae3a9
+sk: publishedAt(staring with deal-) < current_time
+ScanIndexForward: true
+Limit: n
 ```
 
 
@@ -127,6 +131,11 @@ query: gsi2: pk: table-sk = "brand", sk: is_hot = true`(Sparse Index)
 ```
 
 ## Comment
+
+### Get commnets
+```
+query: 
+```
 
 
 # CMS
