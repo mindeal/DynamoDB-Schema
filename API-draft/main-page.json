@@ -1,0 +1,49 @@
+{
+    "banner": [
+        {
+            "uri": "***",
+            "image": "***"
+        },
+        {
+            "uri": "***",
+            "image": "***"
+        },
+        {
+            "uri": "***",
+            "image": "***"
+        }
+    ],
+
+    "hot_items": [
+        {
+            "uri": "***",
+            "image": "***",
+            "brand": "***",
+            "text": "***"
+        },
+        {
+            "uri": "***",
+            "image": "***",
+            "brand": "***",
+            "text": "***"
+        },
+        {
+            "uri": "***",
+            "image": "***",
+            "brand": "***",
+            "text": "***"
+        }
+    ],
+
+    "latest_items": [
+        {
+            "uri": "***",
+            "image": "***",
+            "title": "***",
+            "subtitle": "***",
+            "description": "***",
+            "payment_methods": ["alipay", "wechatpay"],
+            "deliver_to_china": true
+        }
+    ]
+}
