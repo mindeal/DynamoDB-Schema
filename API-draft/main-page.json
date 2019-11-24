@@ -41,7 +41,7 @@
             "image": "***",
             "title": "***",
             "subtitle": "***",
-            "description": "***",
+            "content_snapshot": "***",
             "payment_methods": ["alipay", "wechatpay"],
             "deliver_to_china": true
         }

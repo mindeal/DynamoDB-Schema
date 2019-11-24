@@ -1,0 +1,45 @@
+{
+    "hot_brands": [
+        {
+            "uri": "****",
+            "image": "***",
+            "name": "***"
+        },
+        {
+            "uri": "****",
+            "image": "***",
+            "name": "***"
+        },
+        {
+            "uri": "****",
+            "image": "***",
+            "name": "***"
+        },
+        {
+            "uri": "****",
+            "image": "***",
+            "name": "***"
+        }
+    ],
+
+    "latest_articles": [
+        {
+            "uri":"****",
+            "image": "***",
+            "title": "",
+            "content_snapshot": ""
+        },
+        {
+            "uri":"****",
+            "image": "***",
+            "title": "",
+            "content_snapshot": ""
+        },
+        {
+            "uri":"****",
+            "image": "***",
+            "title": "",
+            "content_snapshot": ""
+        }
+    ]
+}
