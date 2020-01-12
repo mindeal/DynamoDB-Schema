@@ -29,6 +29,7 @@
 * Markdown text area is deal description
 * Next part is editor choice single product of the deal (Optional)
 * Last part contains all brands relating to the deal (Optional)
+* The bottom row contains three parts, from left to right, number of comments, number of likes, and purchase url.
 
 ### Sample payload
 
