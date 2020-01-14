@@ -21,6 +21,7 @@
 
 ## Deal Page
 
+![产品详情页 - 切图备份 4.png](https://i.loli.net/2020/01/14/NgJar9EvyzeLbmG.png)
 * Top section contains banner images
 * Black text is title of deal, left blue bubble is label
 * Red text is subtitle
