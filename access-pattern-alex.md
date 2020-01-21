@@ -93,3 +93,20 @@
 ```
 
 The last category in main page is Shipping to China which is actually not a "category" if we use a [sparse indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-general-sparse-indexes.html) to indicate this value.
+
+
+## Brand Page
+
+![品牌模块 - 切图 _1_.png](https://i.loli.net/2020/01/21/tSBbI1jgAhPGkiL.png)
+
+The first line with arrow at right is "Navigate to all brands" to following page
+
+The second part contains hot brands which is set by editors in CMS
+
+The rests(scrolling down) are lasted articles wrote by editors.
+
+![全部品牌  - 切图 _1_.png](https://i.loli.net/2020/01/21/S9vTxPVgiImEhar.png)
+
+There are the all brand sorting alphabetically. Each brand can be clicked and it leads to its brand description page.
+
+![品牌详情页  - 切图.png](https://i.loli.net/2020/01/21/lCKjch1TsyJwpgM.png)
