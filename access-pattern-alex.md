@@ -15,7 +15,7 @@
 
 ### Access Patterns
 
-* Get latest deals overall
+* Get latest deals and articles overall
 * Get hottest deals - hot deals are defined by editor manually in CMS
 * Get latest deals in different categories.
 
@@ -32,7 +32,7 @@
 * Last part contains all brands relating to the deal (Optional)
 * The bottom row contains three parts, from left to right, number of comments, number of likes, and purchase url.
 
-### Sample payload
+### Deal sample payload
 
 ```json
 {
@@ -95,7 +95,7 @@
 The last category in main page is Shipping to China which is actually not a "category" if we use a [sparse indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-general-sparse-indexes.html) to indicate this value.
 
 
-## Brand Page
+## Article Page
 
 ![品牌模块 - 切图 _1_.png](https://i.loli.net/2020/01/21/tSBbI1jgAhPGkiL.png)
 
@@ -105,8 +105,42 @@ The second part contains hot brands which is set by editors in CMS
 
 The rests(scrolling down) are lasted articles wrote by editors.
 
+### Article sample payload
+```json
+{
+    "title (String) (required)": "Macy’s 20% OFF",
+    "subtitle (String) (required)": "Burberry, Chanel",
+    "bannerImages (String Set)": [
+        "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+        "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+        "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+    ],
+    "body (String) (required)": "https://s3.amazonaws.com/www.mindeal.com/index.html",
+    "totalLike (Number) (required)": 10,
+    "totalComment (Number) (required)": 10
+}
+
+```
+
+Click "Navigate to all brands" will lead to all brands page
+
 ![全部品牌  - 切图 _1_.png](https://i.loli.net/2020/01/21/S9vTxPVgiImEhar.png)
 
 There are the all brand sorting alphabetically. Each brand can be clicked and it leads to its brand description page.
 
 ![品牌详情页  - 切图.png](https://i.loli.net/2020/01/21/lCKjch1TsyJwpgM.png)
+
+### Brand sample payload
+```json
+{
+    "brandName": "Gucci",
+    "bannerImages (String Set)": [
+        "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+        "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+        "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+    ],
+    "body (String) (required)": "https://s3.amazonaws.com/www.mindeal.com/index.html",
+    "officialUrl": "www.example.com"
+}
+
+```
