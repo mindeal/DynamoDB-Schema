@@ -144,3 +144,13 @@ There are the all brand sorting alphabetically. Each brand can be clicked and it
 }
 
 ```
+
+## Notification Page
+
+![消息模块 - 切图.png](https://i.loli.net/2020/01/29/3b7By8OTdqLQJ6p.png)
+
+There are two kinds of notifications.
+
+The first one is message sent by Editor. It is all text based, may contain links to certain article or deal.
+
+The second kind is notification when someone reply user's comment.
