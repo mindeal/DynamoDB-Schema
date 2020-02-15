@@ -1,57 +1,210 @@
-{
-    "pk (String) (required)": "deal-5792519f-1cf9-45d0-ba0a-eaeb3533dd8d",
-    "sk (String) (required)": "deal-8",
-    "title (String) (required)": "Burberry香水线上3折起",
-    "subtitle (String)": "低至三折+买一送一",
-    "bannerImages (String Set)": [
-        "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
-        "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
-        "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
-    ],
-    "paymentMethod (String Set)": [
-        "wechatpay",
-        "alipay"
-    ],
-    "label (String)": "独家",
-    "isDeliverToChina (Boolean)": true,
-    "coupons (List)": [
-        {
-            "code": "AIR5",
-            "description": "全场满$55减$5"
-        },
-        {
-            "code": "AIR10",
-            "description": "全场满$100减$10"
-        }
-    ],
-    "totalLike (Number) (required)": 10,
-    "totalFavorite (Number) (required)": 10,
-    "totalComment (Number) (required)": 10,
-    "purchaseUrl (String)": "https://goo.gl",
-    "publishedAt (String) (required)": "deal-1567121541828",
-    "popularItems (List)": [
-        {
-            "title": "小棕瓶",
-            "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
-            "purchaseUrl": "https://goo.gl"
-        },
-        {
-            "title": "神仙水",
-            "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
-            "purchaseUrl": "https://goo.gl"
-        }
-    ],
-    "brands (List)": [
-        {
-            "id": "brand-2d456a54-672f-4bb2-bbe4-838605b1bb8b",
-            "brand": "Jo Malone",
-            "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
-        },
-        {
-            "id": "brand-2d456a54-672f-4bb2-bbe4-838605b1bb8b",
-            "brand": "Jo Malone",
-            "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
-        }
-    ],
-    "body (String) (required)": "https://s3.amazonaws.com/www.mindeal.com/index.html"
-}
+[
+    {
+        "title": "兰蔻超值套装73折",
+        "bannerImages": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "paymentMethod": [
+            "wechatpay",
+            "alipay"
+        ],
+        "label": "独家",
+        "coupons": [
+            {
+                "code": "beautyhamster",
+                "description": "73折"
+            },
+            {
+                "code": "22VCUK",
+                "description": "78折"
+            }
+        ],
+        "purchaseUrl": "http://t.cn/A6PXUHnF",
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "Space NK满减别忘了看，每满£60减15！也就是满£120减30，满£180减45",
+        "subtitle": "相当于最低75折",
+        "bannerImages (String Set)": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "purchaseUrl": "http://t.cn/Ai9E9qDE",
+        "popularItems": [
+            {
+                "title": "Chantecaille香缇卡",
+                "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+                "purchaseUrl": "http://t.cn/ELGuqJT"
+            },
+            {
+                "title": "Fresh",
+                "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+                "purchaseUrl": "http://t.cn/ELGuqJT"
+            },
+            {
+                "title": "Kate Somerville",
+                "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+                "purchaseUrl": "http://t.cn/ELGuqJT"
+            },
+            {
+                "title": "Kiehl’s",
+                "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+                "purchaseUrl": "http://t.cn/ELGuqJT"
+            },
+            {
+                "title": "La Mer海蓝之谜",
+                "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+                "purchaseUrl": "http://t.cn/ELGuqJT"
+            }
+
+        ],
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "Algenist奥杰尼胶原蛋白打底精华7折收",
+        "bannerImages": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "paymentMethod": [
+            "alipay"
+        ],
+        "isDeliverToChina": true,
+        "coupons": [
+            {
+                "code": "LUCKY30",
+                "description": "7折"
+            }
+        ],
+        "purchaseUrl": "http://t.cn/AiDGXXYQ",
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "Algenist奥杰尼胶原蛋白打底精华7折收",
+        "bannerImages": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "paymentMethod": [
+            "alipay"
+        ],
+        "isDeliverToChina": true,
+        "coupons": [
+            {
+                "code": "LUCKY30",
+                "description": "7折"
+            }
+        ],
+        "purchaseUrl": "http://t.cn/AiDGXXYQ",
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "CT每满60镑-15镑，相当于75折起",
+        "subtitle": "最高可减210镑",
+        "bannerImages": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "paymentMethod": [
+            "alipay"
+        ],
+        "isDeliverToChina": true,
+        "purchaseUrl": "http://t.cn/A6PR0dWr",
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "CT每满60镑-15镑，相当于75折起",
+        "subtitle": "最高可减210镑",
+        "bannerImages": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "paymentMethod": [
+            "alipay"
+        ],
+        "isDeliverToChina": true,
+        "purchaseUrl": "http://t.cn/A6PR0dWr",
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "Japan Centre卖的梅酒、桃子酒、柚子酒、气泡酒",
+        "subtitle": "基本上不踩雷都好喝",
+        "bannerImages": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "coupons": [
+            {
+                "code": "DRINK15",
+                "description": "85折"
+            }
+        ],
+        "label": "独家",
+        "purchaseUrl": "http://t.cn/A6PR0dWr",
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "Regenerate牙膏和漱口水",
+        "subtitle": "买3免1 可叠加额外85折码",
+        "bannerImages": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "coupons": [
+            {
+                "code": "LUCKYX15",
+                "description": "85折"
+            }
+        ],
+        "purchaseUrl": "http://t.cn/AikngjGw",
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "Valentino小盒子5折收",
+        "bannerImages": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "purchaseUrl": "http://t.cn/A6PRMo81",
+        "popularItems": [
+            {
+                "title": "白",
+                "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+                "purchaseUrl": "http://t.cn/ELGuqJT"
+            },
+            {
+                "title": "黑",
+                "thumbnail": "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+                "purchaseUrl": "http://t.cn/ELGuqJT"
+            }
+        ],
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "Valentino线上6折",
+        "subtitle": "可叠加额外9折码",
+        "bannerImages": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "coupons": [
+            {
+                "code": "EXTRA10",
+                "description": "9折"
+            }
+        ],
+        "purchaseUrl": "http://t.cn/A6PRMo81",
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    }
+]

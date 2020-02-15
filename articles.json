@@ -1,0 +1,60 @@
+[
+    {
+        "title": "黑五 || LVR 6折大促",
+        "subtitle": "直邮全球，什么税都包，放心买就行。好东西超级多！", 
+        "bannerImages (String Set)": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "嘿五 || Currentbody美容仪活动汇总",
+        "subtitle": "来收美容仪器啦！洁面仪、童颜机、脱毛仪~要啥有啥", 
+        "bannerImages (String Set)": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "㕛11 ‖ LVR全场7折，什么值得买",
+        "subtitle": "包税直邮全球，大促区也来凑热闹啦！", 
+        "bannerImages (String Set)": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "6月20日 || 89家夏季大促汇总",
+        "bannerImages (String Set)": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "12月27日 || 99家 年终大促汇总",
+        "bannerImages (String Set)": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    },
+    {
+        "title": "黑五 ‖ LVR全场7折，什么值得买",
+        "subtitle": "包税直邮全球，大促区也来凑热闹啦！", 
+        "bannerImages (String Set)": [
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico",
+            "https://mindeal-cms-test.s3.amazonaws.com/favicon.ico"
+        ],
+        "body": "https://s3.amazonaws.com/www.mindeal.com/index.html"
+    }
+]
